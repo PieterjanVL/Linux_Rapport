@@ -45,19 +45,19 @@ plt.savefig(save_grafiek+'/grafiek1')
 #Algemene plot maken dat datum en bezetting bekijkt:
 tweede_plot = df.pivot_table(index='time', columns='facilityName', values='bezetting%', aggfunc='mean')
 print(tweede_plot)
-tweede_plot.plot(title='Tijdsaanduiding wanneer data is opgenomen en hun bezetting', xlabel='datum', ylabel='bezetting in %')
+tweede_plot.plot(title='Bezetting wanneer data is opgenomen', xlabel='datum', ylabel='bezetting in %')
 plt.savefig(save_grafiek+'/grafiek2')
 
 #Mean plot maken dat graden en bezetting bekijkt:
 derde_plot = df.pivot_table(index='time',values='bezetting%', aggfunc='mean')
 print(derde_plot)
-derde_plot.plot(title='Gemiddelde tijdsaanduiding wanneer data is opgenomen en hun bezetting', xlabel='datum', ylabel='bezetting in %', legend='test')
+derde_plot.plot(title='Gemiddelde invloed temperatuur bezetting fietsenstalling', xlabel='datum', ylabel='bezetting in %', legend='test')
 plt.savefig(save_grafiek+'/grafiek3')
 
 #Algemene plot maken dat datum en bezetting bekijkt:
 derde_plot = df.pivot_table(index='graden',values='bezetting%', aggfunc='mean')
 print(derde_plot)
-derde_plot.plot(title='Gemiddelde tijdsaanduiding wanneer data is opgenomen en hun bezetting', xlabel='graden', ylabel='bezetting in %')
+derde_plot.plot(title='Gemiddelde bezetting wanneer data is opgenomen', xlabel='graden', ylabel='bezetting in %')
 plt.savefig(save_grafiek+'/grafiek4')
 
 ##################################################RAPORT###########################################################

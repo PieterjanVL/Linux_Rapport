@@ -26,6 +26,6 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Voert test uit 
-      run: python ./7_test.py
+      run: python ./7_analyse.py
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.1.1
