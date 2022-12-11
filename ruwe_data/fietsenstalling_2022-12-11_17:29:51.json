@@ -13,7 +13,32 @@
   "records": [
     {
       "datasetid": "real-time-bezettingen-fietsenstallingen-gent",
-      "recordid": "48d8eff444686b7f56a4ddeb683cf2f5eebba437",
+      "recordid": "9dbe3c0462c17cfdcefd4381991d793e3a546163",
+      "fields": {
+        "id": "48-1",
+        "freeplaces": 0,
+        "facilityname": "Korenmarkt",
+        "geo_point_2d": [
+          51.05388288288933,
+          3.7214177570400473
+        ],
+        "time": "2022-12-11T17:26:59+01:00",
+        "totalplaces": 235,
+        "occupiedplaces": 235,
+        "bezetting": 100
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7214177570400473,
+          51.05388288288933
+        ]
+      },
+      "record_timestamp": "2022-12-11T17:28:00.628+01:00"
+    },
+    {
+      "datasetid": "real-time-bezettingen-fietsenstallingen-gent",
+      "recordid": "eecf484e74ff49d843c569d2132377948dc567dc",
       "fields": {
         "id": "48-2",
         "freeplaces": 88,
@@ -22,7 +47,7 @@
           51.05406845807926,
           3.723722319130363
         ],
-        "time": "2022-12-10T23:33:09+01:00",
+        "time": "2022-12-11T17:26:59+01:00",
         "totalplaces": 116,
         "occupiedplaces": 28,
         "bezetting": 24
@@ -34,32 +59,7 @@
           51.05406845807926
         ]
       },
-      "record_timestamp": "2022-12-10T23:34:03.494+01:00"
-    },
-    {
-      "datasetid": "real-time-bezettingen-fietsenstallingen-gent",
-      "recordid": "a7652c042cd5ea0ed12a7409ebc2700035597cac",
-      "fields": {
-        "id": "48-1",
-        "freeplaces": 14,
-        "facilityname": "Korenmarkt",
-        "geo_point_2d": [
-          51.05388288288933,
-          3.7214177570400473
-        ],
-        "time": "2022-12-10T23:33:09+01:00",
-        "totalplaces": 235,
-        "occupiedplaces": 221,
-        "bezetting": 94
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          3.7214177570400473,
-          51.05388288288933
-        ]
-      },
-      "record_timestamp": "2022-12-10T23:34:03.494+01:00"
+      "record_timestamp": "2022-12-11T17:28:00.628+01:00"
     }
   ],
   "facet_groups": [
