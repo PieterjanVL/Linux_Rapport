@@ -7,8 +7,6 @@ DIR=/Users/pieterjan/Documents/Linux_Rapport
 timestamp=$(date +%F_%T)
 timestamp2=$(date +%F_%H-%M-%S)
 
-echo "${timestamp}"
-
 export DIR
 export timestamp
 export timestamp2

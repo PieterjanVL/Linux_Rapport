@@ -15,56 +15,56 @@ dt_string = now.strftime("%Y-%m-%d_%H-%M-%S")
 
 dt_string2 = now.strftime("%Y-%m-%d_%H:%M:%S")
 
-print(dt_string + 'en ' + dt_string2)
+#print(dt_string + 'en ' + dt_string2)
 
 save_grafiek = os.getcwd()+'/analyse/' + str(dt_string)
 
-print(os.path.exists(os.getcwd()))
-print('File is gemaakt' + os.getcwd())
+#print(os.path.exists(os.getcwd()))
+#print('File is gemaakt' + os.getcwd())
 
-print(os.path.exists(os.getcwd() + '/analyse/2022-12-08_18-48-34'))
-print('File is gemaakt' + os.getcwd() + '/analyse')
+#print(os.path.exists(os.getcwd() + '/analyse/2022-12-08_18-48-34'))
+#print('File is gemaakt' + os.getcwd() + '/analyse')
 
 os.makedirs(os.getcwd() + '/analyse/' + dt_string)
 
-print(os.path.exists(os.getcwd() + '/analyse/' + dt_string))
+#print(os.path.exists(os.getcwd() + '/analyse/' + dt_string))
 
 df = pd.read_csv(os.getcwd() + '/data.csv').drop_duplicates()
-print(df)
+#print(df)
 
 #Datum omzetten:
 df['time'] = pd.to_datetime(df['time'], format='%Y-%m-%d %H:%M:%S').dt.strftime('%d/%m/%y %H:%M:%S')
-print(df)
+#print(df)
 
 #Algemene plot maken dat graden en bezetting bekijkt:
 eerste_plot = df.pivot_table(index='graden', columns='facilityName', values='bezetting%', aggfunc='mean')
-print(eerste_plot)
+#print(eerste_plot)
 eerste_plot.plot(title='Invloed temperatuur bezetting fietsenstalling', xlabel='graden celsius', ylabel='bezetting in %')
 plt.savefig(save_grafiek+'/grafiek1')
 
 #Algemene plot maken dat datum en bezetting bekijkt:
 tweede_plot = df.pivot_table(index='time', columns='facilityName', values='bezetting%', aggfunc='mean')
-print(tweede_plot)
+#print(tweede_plot)
 tweede_plot.plot(title='Bezetting wanneer data is opgenomen', xlabel='datum', ylabel='bezetting in %')
 plt.savefig(save_grafiek+'/grafiek2')
 
 #Mean plot maken dat graden en bezetting bekijkt:
 derde_plot = df.pivot_table(index='time',values='bezetting%', aggfunc='mean')
-print(derde_plot)
+#print(derde_plot)
 derde_plot.plot(title='Gemiddelde invloed temperatuur bezetting fietsenstalling', xlabel='datum', ylabel='bezetting in %', legend='test')
 plt.savefig(save_grafiek+'/grafiek3')
 
 #Algemene plot maken dat datum en bezetting bekijkt:
-derde_plot = df.pivot_table(index='graden',values='bezetting%', aggfunc='mean')
-print(derde_plot)
-derde_plot.plot(title='Gemiddelde bezetting wanneer data is opgenomen', xlabel='graden', ylabel='bezetting in %')
+vierde_plot = df.pivot_table(index='graden',values='bezetting%', aggfunc='mean')
+#print(derde_plot)
+vierde_plot.plot(title='Gemiddelde bezetting wanneer data is opgenomen', xlabel='graden', ylabel='bezetting in %')
 plt.savefig(save_grafiek+'/grafiek4')
 
 ##################################################RAPORT###########################################################
 
 rapport_link = os.getcwd()+'/rapport/' + str(dt_string)
 
-print(rapport_link)
+#print(rapport_link)
 
 mdFile = MdUtils(file_name=rapport_link, title='Invloed van temperatuur en tijdsaanduiding op de bezetting van fietsenstalling Braunplein en Korenmarkt te Gent. ')
 print('test')
