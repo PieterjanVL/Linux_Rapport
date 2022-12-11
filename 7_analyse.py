@@ -68,7 +68,7 @@ mdFile = MdUtils(file_name=rapport_link, title='Invloed van temperatuur en tijds
 
 mdFile.new_header(level=1, title='Inleiding')  # style is set 'atx' format by default.
 
-mdFile.new_paragraph("Dit rapport beschrijft en analyseert de invloed van temperatuur en tijdsaanduiding op de bezetting van fietsenstalling Braunplein en Korenmarkt te Gent. De data werd verkregen aan de hand van een publieke api van de stad Gent, [link naar api](https://data.stad.gent/explore/dataset/real-time-bezettingen-fietsenstallingen-gent/api/) . Dit rapport is gemaakt voor het vak linux for data scientists aan de Hogent.   ")
+mdFile.new_paragraph("Dit rapport beschrijft en analyseert de invloed van temperatuur en tijdsaanduiding op de bezetting van fietsenstalling Braunplein en Korenmarkt te Gent. De data werd verkregen aan de hand van een publieke api van de stad Gent, [link naar api](https://data.stad.gent/explore/dataset/real-time-bezettingen-fietsenstallingen-gent/api/). De temperatuur data werd gehaald van [deze site](https://api.openweathermap.org/data/2.5/weather?lat=51.05&lon=3.73&appid=143b019e2b0934a0d44afa8002c8e3ce&units=metric). Dit rapport is gemaakt voor het vak linux for data scientists aan de Hogent.   ")
 mdFile.new_paragraph("**IMPORTANT:** dit rapport is gemaakt voor educatieve doeleinden, er kunnen fouten inzitten.")
 mdFile.new_paragraph()
 
