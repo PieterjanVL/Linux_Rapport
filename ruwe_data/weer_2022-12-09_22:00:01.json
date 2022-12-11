@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 3.73,
+    "lat": 51.05
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": -1.05,
+    "feels_like": -3,
+    "temp_min": -2.28,
+    "temp_max": 0.61,
+    "pressure": 1008,
+    "humidity": 81,
+    "sea_level": 1008,
+    "grnd_level": 1006
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.53,
+    "deg": 169,
+    "gust": 1.45
+  },
+  "clouds": {
+    "all": 39
+  },
+  "dt": 1670619603,
+  "sys": {
+    "type": 2,
+    "id": 2011240,
+    "country": "BE",
+    "sunrise": 1670571375,
+    "sunset": 1670600324
+  },
+  "timezone": 3600,
+  "id": 2797656,
+  "name": "Ghent",
+  "cod": 200
+}

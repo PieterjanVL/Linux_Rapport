@@ -1,0 +1,84 @@
+{
+  "nhits": 2,
+  "parameters": {
+    "dataset": "real-time-bezettingen-fietsenstallingen-gent",
+    "rows": 10,
+    "start": 0,
+    "facet": [
+      "facilityname"
+    ],
+    "format": "json",
+    "timezone": "Europe/Brussels"
+  },
+  "records": [
+    {
+      "datasetid": "real-time-bezettingen-fietsenstallingen-gent",
+      "recordid": "356d348d26b78f1cc1ce4cfef86673a188944682",
+      "fields": {
+        "id": "48-1",
+        "freeplaces": 34,
+        "facilityname": "Korenmarkt",
+        "geo_point_2d": [
+          51.05388288288933,
+          3.7214177570400473
+        ],
+        "time": "2022-12-08T17:55:48+01:00",
+        "totalplaces": 235,
+        "occupiedplaces": 201,
+        "bezetting": 85
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7214177570400473,
+          51.05388288288933
+        ]
+      },
+      "record_timestamp": "2022-12-08T17:56:00.683+01:00"
+    },
+    {
+      "datasetid": "real-time-bezettingen-fietsenstallingen-gent",
+      "recordid": "34d7a1a96ee40f7d4a9bb8cb2cad9f1133e2e9b8",
+      "fields": {
+        "id": "48-2",
+        "freeplaces": 88,
+        "facilityname": "Braunplein",
+        "geo_point_2d": [
+          51.05406845807926,
+          3.723722319130363
+        ],
+        "time": "2022-12-08T17:55:48+01:00",
+        "totalplaces": 116,
+        "occupiedplaces": 28,
+        "bezetting": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.723722319130363,
+          51.05406845807926
+        ]
+      },
+      "record_timestamp": "2022-12-08T17:56:00.683+01:00"
+    }
+  ],
+  "facet_groups": [
+    {
+      "name": "facilityname",
+      "facets": [
+        {
+          "name": "Braunplein",
+          "count": 1,
+          "state": "displayed",
+          "path": "Braunplein"
+        },
+        {
+          "name": "Korenmarkt",
+          "count": 1,
+          "state": "displayed",
+          "path": "Korenmarkt"
+        }
+      ]
+    }
+  ]
+}

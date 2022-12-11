@@ -1,0 +1,49 @@
+{
+  "coord": {
+    "lon": 3.73,
+    "lat": 51.05
+  },
+  "weather": [
+    {
+      "id": 601,
+      "main": "Snow",
+      "description": "snow",
+      "icon": "13n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 1.1,
+    "feels_like": -1.3,
+    "temp_min": 0.57,
+    "temp_max": 2.17,
+    "pressure": 1008,
+    "humidity": 84,
+    "sea_level": 1008,
+    "grnd_level": 1006
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.11,
+    "deg": 260,
+    "gust": 4.56
+  },
+  "snow": {
+    "1h": 1.54
+  },
+  "clouds": {
+    "all": 85
+  },
+  "dt": 1670526005,
+  "sys": {
+    "type": 2,
+    "id": 2011240,
+    "country": "BE",
+    "sunrise": 1670484908,
+    "sunset": 1670513939
+  },
+  "timezone": 3600,
+  "id": 2797656,
+  "name": "Ghent",
+  "cod": 200
+}
