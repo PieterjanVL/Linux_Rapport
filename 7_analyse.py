@@ -65,7 +65,7 @@ rapport_link = os.getcwd()+'/rapport/' + str(dt_string)
 #print(rapport_link)
 
 mdFile = MdUtils(file_name=rapport_link, title='Invloed van temperatuur en tijdsaanduiding op de bezetting van fietsenstalling Braunplein en Korenmarkt te Gent. ')
-print('test')
+
 mdFile.new_header(level=1, title='Inleiding')  # style is set 'atx' format by default.
 
 mdFile.new_paragraph("Dit rapport beschrijft en analyseert de invloed van temperatuur en tijdsaanduiding op de bezetting van fietsenstalling Braunplein en Korenmarkt te Gent. De data werd verkregen aan de hand van een publieke api van de stad Gent, [link naar api](https://data.stad.gent/explore/dataset/real-time-bezettingen-fietsenstallingen-gent/api/) . Dit rapport is gemaakt voor het vak linux for data scientists aan de Hogent.   ")
