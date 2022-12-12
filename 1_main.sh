@@ -3,7 +3,8 @@ set -o errexit   # abort on nonzero exitstatus
 set -o nounset   # abort on unbound variable
 set -o pipefail  # don't hide errors within pipes
 
-DIR=/Users/pieterjan/Documents/Linux_Rapport
+#DIR=/Users/pieterjan/Documents/Linux_Rapport
+DIR=/home/pieterjan/Documents/Hogent/22-23/Linux/Linux_Rapport
 timestamp=$(date +%F_%T)
 timestamp2=$(date +%F_%H-%M-%S)
 
